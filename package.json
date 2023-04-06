@@ -1,7 +1,7 @@
 {
-  "name": "node-red-contrib-azure-application-insights",
-  "version": "1.0.1",
-  "description": "Tracks metrics in Azure Application Insights",
+  "name": "node-red-contrib-azure-application-insights-all-tracks",
+  "version": "0.1.0",
+  "description": "Tracks events, exceptions, metrics, traces, dependencies, and requests in Azure Application Insights",
   "main": "track-metric.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,20 +13,25 @@
   ],
   "node-red": {
     "nodes": {
-      "track-metric": "track-metric.js"
+      "track-dependency": "track-dependency.js",
+      "track-event": "track-event.js",
+      "track-exception": "track-exception.js",
+      "track-metric": "track-metric.js",
+      "track-request": "track-request.js",
+      "track-trace": "track-trace.js"
     }
   },
-  "author": "Kaloyan Nikolov",
+  "author": "Muhammad Nizami - forked from Kaloyan Nikolov",
   "license": "ISC",
   "dependencies": {
     "applicationinsights": "^1.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KaloNikolov/node-red-contrib-azure-application-insights.git"
+    "url": "git+https://github.com/muhammadnizami/node-red-contrib-azure-application-insights.git"
   },
   "bugs": {
-    "url": "https://github.com/KaloNikolov/node-red-contrib-azure-application-insights/issues"
+    "url": "https://github.com/muhammadnizami/node-red-contrib-azure-application-insights/issues"
   },
-  "homepage": "https://github.com/KaloNikolov/node-red-contrib-azure-application-insights#readme"
+  "homepage": "https://github.com/muhammadnizami/node-red-contrib-azure-application-insights#readme"
 }
